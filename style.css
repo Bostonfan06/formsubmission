@@ -1,7 +1,21 @@
+h3 {
+    text-align: center;
+}
+
 .form-section {
     text-align: center;
 }
 
 .form-section input {
     margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
 }

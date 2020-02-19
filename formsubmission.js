@@ -1,6 +1,6 @@
-$(function (){
-    $( "form" ).submit(function( event ) {
-        console.log($(this).serializeArray());
-        event.preventDefault();
-        });
-});
+$(document).ready(function() { 
+    $("button").click(function() { 
+        var data = $("form").serializeArray(); 
+        console.log(data);
+    }); 
+}); 
