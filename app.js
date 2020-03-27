@@ -5,7 +5,7 @@ var con = mysql.createConnection({
   //Properties
   host: "localhost",
   user: "root",
-  password: "Snowryder1986",
+  password: "",
   port: 3306
 });
 
