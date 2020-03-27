@@ -1,0 +1,19 @@
+var express = require('express');
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  //Properties
+  host: "localhost",
+  user: "root",
+  password: "Snowryder1986",
+  port: 3306
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected");
+  con.query("CREATE Database test", function (err, result) {
+    if (err) throw err;
+    console.log("Database created");
+  });
+});
